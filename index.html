@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071b34">
+  <meta name="description" content="رحلات القمة لحجوزات الطيران والسفر والسياحة. أرسل طلب رحلتك وسنتابع معك تفاصيل الحجز.">
+  <title>رحلات القمة | AL-QIMMA TRAVEL</title>
+  <style>
+    :root{--navy:#071b34;--navy2:#0d2a4a;--gold:#d4af37;--gold2:#f2d47a;--cream:#f7f5ef;--ink:#152337;--muted:#637083;--line:#e7e2d6}
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#fff;color:var(--ink);line-height:1.7}
+    a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+    .topbar{background:#041225;color:#dbe4ef;font-size:13px;padding:8px 0}
+    .topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+    header{background:rgba(7,27,52,.97);color:white;position:sticky;top:0;z-index:10;border-bottom:1px solid #24415e}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;color:var(--gold);font-size:25px;background:linear-gradient(145deg,#102f50,#061326)}
+    .brand strong{display:block;color:var(--gold2);font-size:20px;line-height:1.3}.brand small{display:block;letter-spacing:2px;font-size:10px;color:#f3ead2;direction:ltr;text-align:right}
+    nav{display:flex;gap:24px;font-size:14px;color:#e4eaf1}nav a:hover{color:var(--gold2)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:10px;padding:12px 20px;background:linear-gradient(135deg,var(--gold2),var(--gold));color:#101d2b;font-weight:700;cursor:pointer;transition:.2s}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.04)}.btn-outline{border:1px solid var(--gold);color:var(--gold2);background:transparent}
+    .hero{background:radial-gradient(ellipse at 75% 15%,#244967 0%,transparent 35%),linear-gradient(120deg,#061326,#0b2744 65%,#102f50);color:white;overflow:hidden;position:relative}
+    .hero:after{content:"";position:absolute;width:450px;height:450px;border:1px solid rgba(212,175,55,.22);border-radius:50%;left:-150px;bottom:-260px;box-shadow:0 0 0 35px rgba(212,175,55,.04),0 0 0 75px rgba(212,175,55,.03)}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:42px;align-items:center;padding:76px 0 82px;position:relative;z-index:1}
+    .eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--gold2);font-size:13px;letter-spacing:.4px}.eyebrow:before{content:"";width:30px;height:1px;background:var(--gold)}
+    h1{font-size:clamp(36px,5vw,58px);line-height:1.2;margin:18px 0;color:#fff}h1 span{color:var(--gold2)}.hero p{font-size:17px;color:#d4dfeb;max-width:570px;margin:0 0 26px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:30px;color:#c9d4e0;font-size:12px}.trust span:before{content:"✓";color:var(--gold2);font-weight:bold;margin-left:7px}
+    .flight-card{position:relative;background:linear-gradient(145deg,rgba(255,255,255,.12),rgba(255,255,255,.04));border:1px solid rgba(242,212,122,.35);border-radius:24px;padding:28px;box-shadow:0 25px 70px #020b16aa;backdrop-filter:blur(10px)}
+    .flight-card .plane{font-size:74px;text-align:center;color:var(--gold2);filter:drop-shadow(0 10px 15px #0006);transform:rotate(-8deg)}
+    .route{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:10px}.city{font-size:20px;font-weight:bold}.city small{display:block;color:#b9c7d5;font-size:12px;font-weight:normal}.route-line{flex:1;border-top:1px dashed var(--gold);position:relative;text-align:center;color:var(--gold2);font-size:18px}
+    .card-note{border-top:1px solid #ffffff24;margin-top:22px;padding-top:17px;color:#d2dce7;font-size:13px;text-align:center}
+    section{padding:72px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 36px}.section-head .eyebrow{justify-content:center}.section-head h2{font-size:clamp(27px,3.5vw,38px);margin:10px 0;color:var(--navy)}.section-head p{color:var(--muted);margin:0}
+    .services{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.service{padding:24px 20px;border:1px solid var(--line);border-radius:16px;background:white;transition:.2s}.service:hover{transform:translateY(-4px);box-shadow:0 15px 35px #10253b10;border-color:#d9c27a}.service .ico{width:48px;height:48px;display:grid;place-items:center;border-radius:13px;background:#fbf5df;color:#967319;font-size:24px;margin-bottom:16px}.service h3{margin:0 0 8px;color:var(--navy);font-size:18px}.service p{margin:0;color:var(--muted);font-size:14px}
+    .why{background:var(--cream)}.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.why-panel{background:var(--navy);border-radius:22px;padding:32px;color:white;position:relative;overflow:hidden}.why-panel h3{font-size:26px;color:var(--gold2);margin:0 0 12px}.why-panel p{color:#d6e0e9}.points{display:grid;grid-template-columns:1fr 1fr;gap:20px}.point{display:flex;gap:12px}.point b{display:block;color:var(--navy);margin-bottom:4px}.point p{margin:0;color:var(--muted);font-size:14px}.point-icon{color:#a9821d;font-size:22px}
+    .booking{background:#fff}.booking-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:start}.booking-info{background:var(--navy);color:white;padding:30px;border-radius:20px}.booking-info h3{font-size:25px;color:var(--gold2);margin-top:0}.booking-info p{color:#d3dfeb}.contact-line{padding:13px 0;border-top:1px solid #ffffff20;color:#e4ebf2;font-size:14px}
+    form{border:1px solid var(--line);border-radius:20px;padding:28px;box-shadow:0 15px 45px #10253b0b}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:flex;flex-direction:column;gap:7px}.field.full{grid-column:1/-1}label{font-size:13px;font-weight:bold;color:#334155}input,select,textarea{width:100%;border:1px solid #d9dfe7;border-radius:9px;padding:12px 13px;font:inherit;font-size:14px;background:#fff;color:var(--ink);outline:none}input:focus,select:focus,textarea:focus{border-color:#b99736;box-shadow:0 0 0 3px #d4af3720}textarea{min-height:88px;resize:vertical}.form-note{font-size:12px;color:var(--muted);margin:12px 0 18px}.form-actions{display:flex;gap:10px;flex-wrap:wrap}.status{display:none;background:#f7f3e6;color:#4e3c0b;border-radius:10px;padding:14px;margin-top:15px;font-size:14px;white-space:pre-wrap}
+    .cta{background:linear-gradient(110deg,#071b34,#12385b);color:white;text-align:center;padding:54px 0}.cta h2{font-size:clamp(26px,4vw,38px);margin:0 0 8px}.cta p{color:#d4dfeb;margin:0 0 22px}
+    footer{background:#041225;color:#d1dbe6;padding:28px 0}.footer-row{display:flex;justify-content:space-between;gap:20px;align-items:center;flex-wrap:wrap}.footer-brand{color:var(--gold2);font-weight:bold}.footer-small{font-size:12px;color:#9eb0c2}
+    @media(max-width:850px){nav{display:none}.hero-grid,.why-grid,.booking-grid{grid-template-columns:1fr}.hero-grid{padding:55px 0}.flight-card{max-width:500px;width:100%;margin:auto}.services{grid-template-columns:repeat(2,1fr)}.why-grid{gap:28px}}
+    @media(max-width:520px){.services{grid-template-columns:1fr 1fr;gap:10px}.service{padding:17px 14px}.service h3{font-size:16px}.service p{font-size:12px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.hero p{font-size:15px}.flight-card{padding:20px}.route .city{font-size:17px}section{padding:54px 0}.topbar .container{justify-content:center}.brand strong{font-size:17px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>✦ رحلتك تبدأ من هنا</span><span>خدمات طلبات حجز الطيران داخل العراق وإلى العالم</span></div></div>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="رحلات القمة">
+        <span class="logo">✈</span><span><strong>رحلات القمة</strong><small>AL-QIMMA TRAVEL</small></span>
+      </a>
+      <nav><a href="#services">خدماتنا</a><a href="#about">لماذا رحلات القمة؟</a><a href="#booking">اطلب حجزك</a></nav>
+      <a class="btn" href="#booking">اطلب حجزك ↗</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">حجوزات طيران • سفر • سياحة</div>
+          <h1>وجهتك القادمة<br><span>تبدأ من هنا</span></h1>
+          <p>خلّ تخطيط رحلتك أسهل مع رحلات القمة. أرسل تفاصيل سفرك، ودعنا نساعدك بمتابعة خيارات الرحلات والحجز بالتنسيق مع مزوّدي الخدمة.</p>
+          <div class="hero-actions"><a class="btn" href="#booking">ابدأ طلب الحجز ✈</a><a class="btn btn-outline" href="#services">اكتشف خدماتنا</a></div>
+          <div class="trust"><span>متابعة لطلبك</span><span>وجهات محلية ودولية</span><span>تواصل واضح</span></div>
+        </div>
+        <div class="flight-card" aria-label="بطاقة رحلة تجريبية">
+          <div class="plane">✈</div>
+          <div class="route">
+            <div class="city">البصرة<small>BSR · نقطة الانطلاق</small></div>
+            <div class="route-line">✦ ─── ✦</div>
+            <div class="city">وجهتك<small>اختر مدينة الوصول</small></div>
+          </div>
+          <div class="card-note">أرسل طلبك لمعرفة الخيارات المتاحة والأسعار الحالية.</div>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="container">
+        <div class="section-head"><div class="eyebrow">خدمات رحلات القمة</div><h2>كل رحلة تبدأ بخطوة</h2><p>نساعدك على تنظيم طلب السفر ومتابعة خيارات الرحلات، مع توضيح التفاصيل قبل تأكيد أي حجز.</p></div>
+        <div class="services">
+          <article class="service"><div class="ico">✈</div><h3>حجوزات الطيران</h3><p>أرسل مسار رحلتك وتواريخ السفر لنساعدك في متابعة الخيارات المتاحة.</p></article>
+          <article class="service"><div class="ico">◎</div><h3>وجهات متنوعة</h3><p>خطط لرحلتك من البصرة أو مدن عراقية أخرى إلى وجهتك المطلوبة.</p></article>
+          <article class="service"><div class="ico">▣</div><h3>ذهاب وعودة</h3><p>وضّح لنا إن كنت تحتاج تذكرة ذهاب فقط أو رحلة ذهاب وعودة.</p></article>
+          <article class="service"><div class="ico">♧</div><h3>متابعة الطلب</h3><p>نرتب تفاصيل طلبك ونتواصل معك لتوضيح الخطوة التالية.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="why" id="about">
+      <div class="container why-grid">
+        <div class="why-panel"><div class="eyebrow">AL-QIMMA TRAVEL</div><h3>سفرك يستحق عناية</h3><p>نؤمن أن تجربة السفر الجيدة تبدأ بمعلومات واضحة وتواصل مرتب. أخبرنا بخطتك، وسنراجع طلبك ونتابع معك الخيارات المتاحة.</p><a class="btn" href="#booking">أرسل تفاصيل رحلتك</a></div>
+        <div><div class="section-head" style="text-align:right;margin:0 0 25px"><div class="eyebrow">اختيارك بثقة</div><h2>خدمة واضحة من البداية</h2><p>نحرص على أن تعرف ما هو مؤكد وما يحتاج إلى مراجعة قبل إتمام الحجز.</p></div>
+          <div class="points">
+            <div class="point"><span class="point-icon">✦</span><div><b>تفاصيل مرتبة</b><p>نموذج بسيط لجمع معلومات الرحلة الأساسية.</p></div></div>
+            <div class="point"><span class="point-icon">◇</span><div><b>توضيح السعر</b><p>السعر والتوفر يُراجعان قبل تأكيد الحجز.</p></div></div>
+            <div class="point"><span class="point-icon">↗</span><div><b>خيارات سفر</b><p>اذكر الوجهة والتواريخ المطلوبة بوضوح.</p></div></div>
+            <div class="point"><span class="point-icon">✓</span><div><b>لا حجز تلقائي</b><p>إرسال الطلب لا يعني إصدار تذكرة أو تأكيد حجز.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="booking" id="booking">
+      <div class="container">
+        <div class="section-head"><div class="eyebrow">ابدأ من هنا</div><h2>اطلب حجز رحلتك</h2><p>املأ المعلومات الأساسية، ثم انسخ الطلب وأرسله إلى فريق رحلات القمة عبر وسيلة التواصل التي تختارها.</p></div>
+        <div class="booking-grid">
+          <aside class="booking-info"><h3>خلّنا نساعدك تخطط</h3><p>أدخل معلومات الرحلة بدقة حتى يسهل مراجعة طلبك والعودة إليك بخيارات مناسبة.</p><div class="contact-line">✈ &nbsp; مغادرة من: البصرة أو أي مدينة تختارها</div><div class="contact-line">◷ &nbsp; التواريخ: حسب خطتك</div><div class="contact-line">◇ &nbsp; الحالة: طلب مبدئي غير مؤكد</div></aside>
+          <form id="bookingForm">
+            <div class="form-grid">
+              <div class="field"><label for="name">الاسم</label><input id="name" name="name" autocomplete="name" placeholder="اسمك الكامل" required></div>
+              <div class="field"><label for="phone">رقم التواصل</label><input id="phone" name="phone" inputmode="tel" placeholder="رقم الهاتف مع مفتاح الدولة" required></div>
+              <div class="field"><label for="from">مدينة المغادرة</label><input id="from" name="from" placeholder="مثال: البصرة" required></div>
+              <div class="field"><label for="to">مدينة الوصول</label><input id="to" name="to" placeholder="مثال: إسطنبول" required></div>
+              <div class="field"><label for="depart">تاريخ الذهاب</label><input id="depart" name="depart" type="date" required></div>
+              <div class="field"><label for="trip">نوع الرحلة</label><select id="trip" name="trip"><option value="ذهاب فقط">ذهاب فقط</option><option value="ذهاب وعودة">ذهاب وعودة</option></select></div>
+              <div class="field" id="returnField" style="display:none"><label for="return">تاريخ العودة</label><input id="return" name="return" type="date"></div>
+              <div class="field"><label for="passengers">عدد المسافرين</label><select id="passengers" name="passengers"><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6 أو أكثر</option></select></div>
+              <div class="field full"><label for="notes">ملاحظات (اختياري)</label><textarea id="notes" name="notes" placeholder="مثلاً: مرونة في موعد السفر أو تفاصيل إضافية"></textarea></div>
+            </div>
+            <p class="form-note">لا ترسل أرقام جوازات السفر أو بيانات البطاقات المصرفية في هذا النموذج. الطلب لا يؤكد الحجز ولا يثبت السعر أو توفر المقاعد.</p>
+            <div class="form-actions"><button class="btn" type="submit">إرسال طلب الحجز عبر واتساب</button><button class="btn" type="button" id="copyBtn" style="background:#edf0f4;color:#24364b">نسخ النص</button></div>
+            <div class="status" id="status" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="cta"><div class="container"><h2>رحلتك القادمة تبدأ بخطوة</h2><p>جهّز تفاصيل سفرك وأرسل طلبك إلى رحلات القمة.</p><a class="btn" href="#booking">اطلب حجزك الآن ✈</a></div></section>
+  </main>
+  <footer><div class="container footer-row"><div><div class="footer-brand">رحلات القمة | AL-QIMMA TRAVEL</div><div class="footer-small">حجوزات طيران • سفر • سياحة</div></div><div class="footer-small">© <span id="year"></span> رحلات القمة. جميع الحقوق محفوظة.</div></div></footer>
+<script>
+  const trip = document.getElementById('trip');
+  const returnField = document.getElementById('returnField');
+  const returnInput = document.getElementById('return');
+  const statusBox = document.getElementById('status');
+  let requestText = '';
+  trip.addEventListener('change', () => {
+    const isReturn = trip.value === 'ذهاب وعودة';
+    returnField.style.display = isReturn ? 'flex' : 'none';
+    returnInput.required = isReturn;
+  });
+  document.getElementById('depart').min = new Date().toISOString().slice(0,10);
+  document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('copyBtn').addEventListener('click', async () => {
+    if (!requestText) {
+      statusBox.style.display = 'block';
+      statusBox.textContent = 'املأ الحقول المطلوبة واضغط «إنشاء نص طلب الحجز» أولاً.';
+      return;
+    }
+    try {
+      await navigator.clipboard.writeText(requestText);
+      statusBox.style.display = 'block';
+      statusBox.textContent = 'تم نسخ نص الطلب. يمكنك لصقه في واتساب أو أي وسيلة تواصل.';
+    } catch (e) {
+      statusBox.style.display = 'block';
+      statusBox.textContent = requestText;
+    }
+  });
+</script>
+
+<script>
+(function () {
+  const form = document.getElementById('bookingForm');
+  if (!form) return;
+  const trip = document.getElementById('trip');
+  const statusBox = document.getElementById('status');
+  const whatsappNumber = '9647751751647'; // 07751751647 with Iraq country code
+  form.addEventListener('submit', function (event) {
+    event.preventDefault();
+    const data = new FormData(form);
+    const get = (key, fallback='—') => String(data.get(key) || fallback).trim();
+    const tripType = get('trip', 'ذهاب فقط');
+    const returnDate = tripType === 'ذهاب وعودة' ? get('return') : 'لا يوجد';
+    const message =
+`طلب حجز جديد — رحلات القمة | AL-QIMMA TRAVEL
+الاسم: ${get('name')}
+رقم تواصل الزبون: ${get('phone')}
+مدينة المغادرة: ${get('from')}
+مدينة الوصول: ${get('to')}
+تاريخ الذهاب: ${get('depart')}
+نوع الرحلة: ${tripType}
+تاريخ العودة: ${returnDate}
+عدد المسافرين: ${get('passengers', '1')}
+ملاحظات: ${get('notes', 'لا توجد')}
+
+تنبيه: هذا طلب مبدئي ويحتاج تأكيد السعر والتوفر قبل إصدار التذكرة.`;
+    const url = 'https://wa.me/' + whatsappNumber + '?text=' + encodeURIComponent(message);
+    if (statusBox) {
+      statusBox.style.display = 'block';
+      statusBox.textContent = 'راح نفتح واتساب مع تفاصيل طلبك جاهزة. اضغط إرسال داخل واتساب حتى يوصل الطلب إلى رحلات القمة.';
+    }
+    window.open(url, '_blank', 'noopener,noreferrer');
+  });
+})();
+</script>
+
+</body>
+</html>
